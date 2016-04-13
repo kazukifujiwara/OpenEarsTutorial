@@ -33,3 +33,12 @@ Build Setting から Enable Bitcode の設定を No にする。
 Linker command failed with exit code 1 (use -v to see invocation)
 ```
 のエラーメッセージが表示される。
+
+どうやらiOS9からのアプリ最適化の仕組みAppThinningのため、Xcode7 betaからはアプリへのbitcodeの埋め込みがデフォルトで有効になったそう。
+
+詳しくは
+
+- [LLVM bitcode基礎知識](URL="http://qiita.com/gamako/items/f37dbb05de9d3832ce6b")
+- [App Thinning (iOS, tvOS, watchOS)](URL="https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html")
+
+を参照。
